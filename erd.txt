@@ -1,0 +1,20 @@
+Authors         Book_Authors          Books
+-------         ------------          -----
+A_ID (PK) <--- A_ID (FK)           B_ID (PK)
+Name            B_ID (FK) -->     Title
+Nationality                     ISBN
+Birthdate                       Category_ID (FK)
+
+Members           Loans
+-------           -----
+M_ID (PK)       Loan_ID (PK)
+Name            B_ID (FK)
+Email           M_ID (FK)
+Join_Date       Loan_Date
+                  Due_Date
+                  Return_Date
+
+Categories
+----------
+C_ID (PK)
+Name (UNIQUE)
